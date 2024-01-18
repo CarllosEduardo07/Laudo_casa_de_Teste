@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Laudo Roteador</title>
+        <link href="/dist/output.css" rel="stylesheet" />
+    </head>
+    <body class="h-full w-full flex justify-center items-center font-poppins">
+        <div class="p-6">
+            <h2>CHECK LIST ROTEADOR</h2>
+
+            <div class=" mb-5 flex justify-around text-center">
+                <div class="flex flex-col">
+                    <label for="id">Nº</label>
+                    <input type="number" id="id" />
+                </div>
+
+                <div class="flex flex-col ">
+                    <label for="mac">MAC:</label>
+                    <input type="text" id="mac" class="uppercase"/>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th><p>Verificar se está ligando:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Funcionalidade OLT Huawei:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Teste de Velocidade no cabo OLT Huawei (Acima de 870Mbps):</p></th>
+                    <td>
+                        <input type="text" value="DO: " class="inputs" />
+                        <input type="text" value="UP: " class="inputs" />
+                        <input type="text" value="" class="inputs" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Teste de Velocidade no Wi-Fi 5GHz OLT Huawei (Verificar a tabela de velocidade):</p></th>
+                    <td>
+                        <input type="text" value="DO: " class="inputs" />
+                        <input type="text" value="UP: " class="inputs" />
+                        <input type="text" value="" class="inputs" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar se todos os LEDS estão funcionando:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar o Modelo do Roteador:</p></th>
+                    <td>
+                        <input type="text" name="" id="" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar a Versão do Roteador:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Testar todas as portas LAN do roteador:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Testar a velocidade de negociação se está em 1Gbps:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar o estado das antenas:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Grau de conservação do Roteador de 0-10 (para aprovar tem que está acima de 7):</p></th>
+                    <td>
+                        <input type="number" id="" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar a potência do Wi-Fi 2,4 GHz:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar a potência do Wi-Fi 5 GHz:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar se o SSID some:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar voltagem:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Se for ONT, verificar o sinal óptico no Power Meter e no Sistema:</p></th>
+                    <td>
+                        <input type="text" value="" class="inputs" />
+                        <input type="text" value="" class="inputs" />
+                        <input type="text" value="" class="inputs" />
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar o aquecimento do Roteador:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Atualizar a versão do firmware do Roteador:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Testar IPV6:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Resetar o Roteador:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p for="laudo_final">LAUDO FINAL</p></th>
+                    <td>
+                        <textarea id="laudo_final" cols="40" rows="3" class="uppercase"></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="container_opcoes">
+                <label for="assinatura">ASSINATURA</label>
+                <input type="text" id="assinatura" class="uppercase"/>
+            </div>
+        </div>
+    </body>
+</html>

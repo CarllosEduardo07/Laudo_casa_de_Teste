@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    label {
+        @apply  font-semibold text-base 
+    }
+ 
+    table, td, tr{
+        @apply border border-slate-400 p-1 text-justify
+    }
+    th{
+        @apply text-start w-96
+    }
+    p{
+        @apply ml-3
+    }
+    input, textarea, select{
+        @apply border border-solid border-2 border-gray-400 rounded-lg
+                ml-3
+    }
+    input, select{
+        @apply w-40 p-0.5 text-center
+    }
+
+    .inputs{
+        @apply w-24 text-start
+
+    }
+    .container_opcoes, label{
+        @apply my-1.5
+    }
+}
