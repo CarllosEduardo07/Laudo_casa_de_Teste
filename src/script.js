@@ -1,4 +1,4 @@
-const id = document.querySelector('#id');
+let id = document.querySelector('#id');
 const mac = document.querySelector('#mac');
 const verificar_Ligado = document.querySelector('#select_Verificar_Ligado');
 const funcionalidade_Olt_Huawei = document.querySelector('#select_Funcionalidade_Olt_Huawei');
@@ -29,11 +29,40 @@ const resetarRoteador = document.querySelector('#select_ResetarRoteador');
 const laudo_Final = document.querySelector('#laudo_Final');
 const assinatura = document.querySelector('#assinatura');
 
-
-
 const btn_visualizar = document.querySelector('#btn_visualizar');
 
-btn_visualizar.addEventListener('click', ()=> {
+let ultimoID = localStorage.getItem('ultimoID') || 0;
 
-    console.log(id.value);
-})
+
+
+function gerarID() {
+    ultimoID++;
+    const novoID = ultimoID;
+    console.log(novoID)
+    
+    localStorage.setItem('ultimoID', ultimoID);
+}
+btn_visualizar.addEventListener('click', () => {
+    gerarID()
+    
+
+    const docDefinition = {
+        content: [
+            {
+                columns: [
+                    {
+                        text: [
+                            { text: 'JÚPITER TELECOMUNICAÇÕES E INFORMÁTICA LTDA\n', style: 'header' },
+                            { text: 'CNPJ: 01.625.636/0001-91, TELEFONE: (99) 3529-3131\n', style: 'subheader' },
+                            { text: 'ENDEREÇO: RUA ODINEA MARTINS VIANA, Nº 15, LOTE 15, QUADRA 40-B, CONJUNTO\n', style: 'subheader' },
+                            { text: 'PLANALTO II, CEP 65.900-000, IMPERATRIZ – MA\n', style: 'subheader' },
+                        ],
+                        margin: [10, 10, 0, 0],
+                        //direita, cima,esqueda, baixo
+                    },
+                ],
+            },
+        ],
+    };
+    const PDF = pdfMake.createPdf(docDefinition).open();
+});

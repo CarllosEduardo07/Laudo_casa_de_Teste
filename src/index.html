@@ -6,6 +6,9 @@
         <title>Laudo Roteador</title>
         <link href="/dist/output.css" rel="stylesheet" />
         <script type="module" src="./script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js" defer></script>
     </head>
     <body class="h-full w-full flex justify-center items-center font-poppins">
         <div class="p-6">
@@ -255,6 +258,7 @@
                     </select>
                 </div>
                 <button id="btn_visualizar" class="p-2 border border-slate-400 border-2 rounded-lg">Visualizar PDF</button>
+                <button onclick="gerarID()">teste</button>
             </div>
         </div>
     </body>
