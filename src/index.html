@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Laudo Roteador</title>
         <link href="/dist/output.css" rel="stylesheet" />
+        <script type="module" src="./script.js"></script>
     </head>
     <body class="h-full w-full flex justify-center items-center font-poppins">
         <div class="p-6">
-            <h2>CHECK LIST ROTEADOR</h2>
+            <h2 class="text-xl text-center font-bold">CHECK LIST ROTEADOR</h2>
 
             <div class="mb-5 flex justify-around text-center">
                 <div class="flex flex-col">
@@ -26,7 +27,7 @@
                 <tr>
                     <th><p>Verificar se está ligando:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Verificar_Ligado">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -36,7 +37,7 @@
                 <tr>
                     <th><p>Funcionalidade OLT Huawei:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Funcionalidade_Olt_Huawei">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -46,9 +47,9 @@
                 <tr>
                     <th><p>Teste de Velocidade no cabo OLT Huawei (Acima de 870Mbps):</p></th>
                     <td>
-                        <input type="text" value="DO: " class="inputs" />
-                        <input type="text" value="UP: " class="inputs" />
-                        <select id="" class="inputs text-center">
+                        <input type="text" value="DO: " id="input_Do_Velocidade_Olt" class="inputs" />
+                        <input type="text" value="UP: " id="input_Up_Velocidade_Olt" class="inputs" />
+                        <select id="select_Velocidade_Cabo_Olt" class="inputs text-center">
                             <option value=""></option>
                             <option value="OK">OK</option>
                             <option value="-">-</option>
@@ -58,9 +59,9 @@
                 <tr>
                     <th><p>Teste de Velocidade no Wi-Fi 5GHz OLT Huawei (Verificar a tabela de velocidade):</p></th>
                     <td>
-                        <input type="text" value="DO: " class="inputs" />
-                        <input type="text" value="UP: " class="inputs" />
-                        <select id="" class="inputs text-center">
+                        <input type="text" value="DO: " id="input_Do_Velocidade_Wifi_5Ghz" class="inputs" />
+                        <input type="text" value="UP: " id="input_Up_Velocidade_Wifi_5Ghz" class="inputs" />
+                        <select id="select_Velocidade_Wifi_5Ghz" class="inputs text-center">
                             <option value=""></option>
                             <option value="OK">OK</option>
                             <option value="-">-</option>
@@ -70,7 +71,7 @@
                 <tr>
                     <th><p>Verificar se todos os LEDS estão funcionando:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Verificar_Leds">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -80,7 +81,7 @@
                 <tr>
                     <th><p>Verificar o Modelo do Roteador:</p></th>
                     <td>
-                        <select id="" class="w-auto">
+                        <select id="select_Modelo_Roteador" class="w-auto">
                             <option value=""></option>
                             <option value="Tp-Link Wi-Fi 6 AX1800 EX220">Tp-Link Wi-Fi 6 AX1800 EX220</option>
                             <option value="Intelbras RG 1200">Intelbras RG 1200</option>
@@ -95,7 +96,7 @@
                 <tr>
                     <th><p>Verificar a Versão do Roteador:</p></th>
                     <td>
-                        <select id="">
+                        <select id="Select_Versao_Roteador">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -105,7 +106,7 @@
                 <tr>
                     <th><p>Testar todas as portas LAN do roteador:</p></th>
                     <td>
-                        <select id="">
+                        <select id="Select_Testar_PortasLan">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -115,7 +116,7 @@
                 <tr>
                     <th><p>Testar a velocidade de negociação se está em 1Gbps:</p></th>
                     <td>
-                        <select id="">
+                        <select id="Select_velocidade_1gb">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -125,7 +126,7 @@
                 <tr>
                     <th><p>Verificar o estado das antenas:</p></th>
                     <td>
-                        <select id="">
+                        <select id="Select_Status_Antenas">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -135,13 +136,13 @@
                 <tr>
                     <th><p>Grau de conservação do Roteador de 0-10 (para aprovar tem que está acima de 7):</p></th>
                     <td>
-                        <input type="number" id="" />
+                        <input type="number" id="input_Grau_Conservacao" />
                     </td>
                 </tr>
                 <tr>
                     <th><p>Verificar a potência do Wi-Fi 2,4 GHz:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Potencia_24ghz">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -151,7 +152,7 @@
                 <tr>
                     <th><p>Verificar a potência do Wi-Fi 5 GHz:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Potencia_5ghz">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -161,7 +162,7 @@
                 <tr>
                     <th><p>Verificar se o SSID some:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Ssid">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -171,7 +172,7 @@
                 <tr>
                     <th><p>Verificar voltagem:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_voltagem">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -181,15 +182,19 @@
                 <tr>
                     <th><p>Se for ONT, verificar o sinal óptico no Power Meter e no Sistema:</p></th>
                     <td>
-                        <input type="text" value="" class="inputs" />
-                        <input type="text" value="" class="inputs" />
-                        <input type="text" value="" class="inputs" />
+                        <input type="text" value="PO: " id="input_Po_Verificar_SinalOptico" class="inputs" />
+                        <input type="text" value="SIS: " id="input_Sis_verificar_sinalOptico" class="inputs" />
+                        <select id="select_verificar_sinalOptico" class="inputs text-center">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
                     <th><p>Verificar o aquecimento do Roteador:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Aquecimento">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -199,7 +204,7 @@
                 <tr>
                     <th><p>Atualizar a versão do firmware do Roteador:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Atualizar_Firmware">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -209,7 +214,7 @@
                 <tr>
                     <th><p>Testar IPV6:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_Ipv6">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -219,7 +224,7 @@
                 <tr>
                     <th><p>Resetar o Roteador:</p></th>
                     <td>
-                        <select id="">
+                        <select id="select_ResetarRoteador">
                             <option value=""></option>
                             <option value="OK" selected>OK</option>
                             <option value="-">-</option>
@@ -227,26 +232,29 @@
                     </td>
                 </tr>
                 <tr>
-                    <th><p for="laudo_final">LAUDO FINAL</p></th>
+                    <th><p for="laudo_Final">LAUDO FINAL</p></th>
                     <td>
-                        <textarea id="laudo_final" cols="40" rows="3" class="uppercase"></textarea>
+                        <textarea id="laudo_Final" cols="40" rows="3" class="uppercase"></textarea>
                     </td>
                 </tr>
             </table>
 
-            <div class="container_opcoes">
-                <label for="assinatura">ASSINATURA</label>
-                <select id="" class="w-auto">
-                    <option value=""></option>
-                    <option value="KARINE NUNES">KARINE NUNES</option>
-                    <option value="ANA MARIA">ANA MARIA SILVA</option>
-                    <option value="EMANOEL CORREIA">EMANOEL CORREIA</option>
-                    <option value="CAMILLY VITÓRIA">CAMILLY VITÓRIA</option>
-                    <option value="KAUAN EMANUEL">KAUAN EMANUEL</option>
-                    <option value="MARIA EDUARDA">MARIA EDUARDA</option>
-                    <option value="JHENIFFER">JHENIFFER</option>
-                    <option value="WELLINGSOM SILVA">WELLINGSOM SILVA</option>
-                </select>
+            <div class="my-5 flex justify-around">
+                <div class="container_opcoes">
+                    <label for="assinatura">ASSINATURA</label>
+                    <select id="assinatura" class="w-auto">
+                        <option value=""></option>
+                        <option value="KARINE NUNES">KARINE NUNES</option>
+                        <option value="ANA MARIA">ANA MARIA SILVA</option>
+                        <option value="EMANOEL CORREIA">EMANOEL CORREIA</option>
+                        <option value="CAMILLY VITÓRIA">CAMILLY VITÓRIA</option>
+                        <option value="KAUAN EMANUEL">KAUAN EMANUEL</option>
+                        <option value="MARIA EDUARDA">MARIA EDUARDA</option>
+                        <option value="JHENIFFER">JHENIFFER</option>
+                        <option value="WELLINGSOM SILVA">WELLINGSOM SILVA</option>
+                    </select>
+                </div>
+                <button id="btn_visualizar" class="p-2 border border-slate-400 border-2 rounded-lg">Visualizar PDF</button>
             </div>
         </div>
     </body>
