@@ -10,15 +10,15 @@
         <div class="p-6">
             <h2>CHECK LIST ROTEADOR</h2>
 
-            <div class=" mb-5 flex justify-around text-center">
+            <div class="mb-5 flex justify-around text-center">
                 <div class="flex flex-col">
                     <label for="id">Nº</label>
                     <input type="number" id="id" />
                 </div>
 
-                <div class="flex flex-col ">
+                <div class="flex flex-col">
                     <label for="mac">MAC:</label>
-                    <input type="text" id="mac" class="uppercase"/>
+                    <input type="text" id="mac" class="uppercase" />
                 </div>
             </div>
 
@@ -28,7 +28,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -38,7 +38,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -48,21 +48,7 @@
                     <td>
                         <input type="text" value="DO: " class="inputs" />
                         <input type="text" value="UP: " class="inputs" />
-                        <input type="text" value="" class="inputs" />
-                    </td>
-                </tr>
-                <tr>
-                    <th><p>Teste de Velocidade no Wi-Fi 5GHz OLT Huawei (Verificar a tabela de velocidade):</p></th>
-                    <td>
-                        <input type="text" value="DO: " class="inputs" />
-                        <input type="text" value="UP: " class="inputs" />
-                        <input type="text" value="" class="inputs" />
-                    </td>
-                </tr>
-                <tr>
-                    <th><p>Verificar se todos os LEDS estão funcionando:</p></th>
-                    <td>
-                        <select id="">
+                        <select id="" class="inputs text-center">
                             <option value=""></option>
                             <option value="OK">OK</option>
                             <option value="-">-</option>
@@ -70,9 +56,40 @@
                     </td>
                 </tr>
                 <tr>
+                    <th><p>Teste de Velocidade no Wi-Fi 5GHz OLT Huawei (Verificar a tabela de velocidade):</p></th>
+                    <td>
+                        <input type="text" value="DO: " class="inputs" />
+                        <input type="text" value="UP: " class="inputs" />
+                        <select id="" class="inputs text-center">
+                            <option value=""></option>
+                            <option value="OK">OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><p>Verificar se todos os LEDS estão funcionando:</p></th>
+                    <td>
+                        <select id="">
+                            <option value=""></option>
+                            <option value="OK" selected>OK</option>
+                            <option value="-">-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <th><p>Verificar o Modelo do Roteador:</p></th>
                     <td>
-                        <input type="text" name="" id="" />
+                        <select id="" class="w-auto">
+                            <option value=""></option>
+                            <option value="Tp-Link Wi-Fi 6 AX1800 EX220">Tp-Link Wi-Fi 6 AX1800 EX220</option>
+                            <option value="Intelbras RG 1200">Intelbras RG 1200</option>
+                            <option value="Mercusys AC1200">Mercusys AC1200</option>
+                            <option value="ZTE H199A">ZTE H199A</option>
+                            <option value="ZTE ZT199">ZTE ZT199</option>
+                            <option value="HUAWEI WS5200">HUAWEI WS5200</option>
+                            <option value="HUAWEI AX2">HUAWEI AX2</option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
@@ -80,7 +97,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -90,7 +107,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -100,7 +117,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -110,7 +127,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -126,7 +143,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -136,7 +153,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -146,7 +163,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -156,7 +173,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -174,7 +191,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -184,7 +201,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -194,7 +211,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -204,7 +221,7 @@
                     <td>
                         <select id="">
                             <option value=""></option>
-                            <option value="OK">OK</option>
+                            <option value="OK" selected>OK</option>
                             <option value="-">-</option>
                         </select>
                     </td>
@@ -219,7 +236,17 @@
 
             <div class="container_opcoes">
                 <label for="assinatura">ASSINATURA</label>
-                <input type="text" id="assinatura" class="uppercase"/>
+                <select id="" class="w-auto">
+                    <option value=""></option>
+                    <option value="KARINE NUNES">KARINE NUNES</option>
+                    <option value="ANA MARIA">ANA MARIA SILVA</option>
+                    <option value="EMANOEL CORREIA">EMANOEL CORREIA</option>
+                    <option value="CAMILLY VITÓRIA">CAMILLY VITÓRIA</option>
+                    <option value="KAUAN EMANUEL">KAUAN EMANUEL</option>
+                    <option value="MARIA EDUARDA">MARIA EDUARDA</option>
+                    <option value="JHENIFFER">JHENIFFER</option>
+                    <option value="WELLINGSOM SILVA">WELLINGSOM SILVA</option>
+                </select>
             </div>
         </div>
     </body>
